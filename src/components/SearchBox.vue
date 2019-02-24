@@ -30,7 +30,7 @@ export default {
   methods: {
     submitKeyword: _.debounce((that, newValue) => {
       that.$emit('keywordChanged', newValue);
-    }, 500),
+    }, 1000),
   },
 };
 </script>
